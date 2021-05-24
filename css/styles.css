@@ -1,0 +1,411 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* FLEXBOX */
+.flex{
+    display: flex;
+}
+.row{
+    flex-direction: row;
+}
+.column{
+    flex-direction: column;
+}
+.wrap {
+    flex-flow: wrap;
+}
+.ai-center{
+    align-items: center;
+}
+.as-end {
+    align-self: flex-end;
+}
+.jc-center{
+    justify-content: center;
+}
+.jc-around{
+    justify-content: space-around;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+}
+header label,
+#btn-menu {
+    display: none;
+}
+header label {
+    height: auto;
+    padding: 1rem;
+}
+
+header label:hover {
+    cursor: pointer;
+    color: rgb(4, 17, 41);
+}
+
+/* nav */
+.menu {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    z-index: 1;
+    box-shadow: 0.1rem 0 0.5rem #333;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    list-style: none;
+}
+.menu li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.menu li a{
+    display: block;
+    color: rgb(4, 17, 41);
+    font-size: 1.3rem;
+    padding: 2rem 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu li a:hover{
+    color: rgb(85, 16, 16);
+}
+/* Welcome */
+.img-welcome {
+    width: 100%;
+    height: 90vh;
+    background-color: #333;
+    background-image: url(../img/Paisajes/rio-areco-001.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.title-1 {
+    color: #FFF;
+    font-size: 6rem;
+    font-family: 'Pacifico', cursive;
+}
+.subtitle {
+    color: aquamarine;
+    font-size: 3rem;
+    font-weight: 100;
+    padding: 0 1rem;
+    text-align:center;
+    font-style: italic;
+}
+
+/* MAIN */
+/* index */
+.main-info{
+    width: 100%;
+    padding: 4rem 1rem;
+}
+.categorias-title {
+    color: rgb(4, 17, 41);
+    padding: 1rem;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.categorias a {
+    text-decoration: none;
+}
+.tarjeta {
+    width: 20%;
+    min-width: 20rem;
+    height: 30vh;
+    margin: 2rem 1rem;
+}
+.tarjeta:hover {
+    color: rgb(85, 16, 16);
+    transform: scale(1.05);
+    box-shadow: 0.5rem 1rem 1rem #777;
+    transition: all 0.5s ease-out;
+}
+
+.img-card{
+    width: 100%;
+    height: 70%;
+    min-height: 15rem;
+}
+.peces {
+    background-image: url(../img/peces/bagre-amarillo-700px.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.lineas {
+    background-image: url(../img/lineas/linea\ boga\ -\ bagre.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.carnadas {
+    background-image: url(../img/carnadas/lombriz.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.habitad {
+    background-image: url(../img/Paisajes/IMG_20200207_203630~2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-title {
+    width: 100%;
+    background-color: #FFF;
+
+}
+.img-title h4 {
+    color: rgb(4, 17, 41);
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 1rem;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* peces y linas*/
+.contenedor-peces {
+    padding: 2rem;
+}
+.peces-top {
+    padding: 1rem;
+}
+.peces-top h2 {
+    color: rgb(1, 19, 1);
+    padding-left: 1rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+.peces-top .nav a,
+.article .nav a {
+    color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+.article .nav a {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+.article .nav a:hover {
+    font-weight: 800;
+}
+.peces-top .nav a:hover {
+    font-weight: 800;
+    border-bottom: 1px solid #111;
+}
+.peces-center {
+    padding: 2rem;
+}
+.article {
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #999;
+}
+.article h3 {
+    color: rgb(1, 19, 1);
+    font-size: 2rem;
+}
+.article h4 {
+    color: #333;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.parrafo-img img {
+    width: 100%;
+}
+/* Lugares */
+.lugares {
+    width: 100%;
+}
+.lugares-top {
+    padding: 3rem 1rem;
+}
+.lugares-top h2,
+.lugares-top h3 {
+    text-align: center;
+}
+.lugares-top h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.lugares-top h3 {
+    font-size: 1.7rem;
+    font-weight: 100;
+    font-style: italic;
+}
+.lugares-info {
+    margin: 1rem;
+}
+.lugar {
+    padding: 2rem 0;
+    border-top: 1px solid rgb(197, 196, 196);
+}
+.lugar h4 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.parrafo-img img,
+.lugar img,
+.lugar iframe {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    min-height: 25rem;
+    max-width: 50rem;
+}
+.article p,
+.parrafo-ancho {
+    width: 100%;
+    max-width: 50rem;
+}
+.pad {
+    padding-left: 1rem;
+}
+.article p {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+/* FOOTER */
+footer{
+    height: 80vh;
+}
+.foot {
+    width: 100%;
+    height: 40%;
+    border-top: 1px solid #777;
+}
+.f1 h3 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+.f1 h4 {
+    font-size: 2rem;
+    font-weight: 100;
+    font-style: italic;
+}
+.redes {
+    margin-top: 4rem;
+}
+.redes a {
+    color: #111;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+}
+.redes a:hover {
+    transform: translateY(0.5rem);
+    transition: all 0.5s ease-out;
+}
+.f2 h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.f2 h5 {
+    font-style: italic;
+    font-weight: 200;
+}
+.formulario {
+    color: #111;
+}
+.formulario input {
+    width: 25rem;
+    border: none;
+    outline: none;
+    margin: 1rem;
+    border-bottom: 1px solid #111;
+}
+.formulario button {
+    color: #FFF;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    background-color: #111;
+}
+.formulario button:hover {
+    background-color: #333;
+}
+.f3 {
+    height: 10%;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    header label{
+        width: 10%;
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        top: 4.5rem;
+        left: -105%;
+        width: 100%;
+        transition: all 500ms;
+        z-index: 100;
+        box-shadow: 0px 1rem 1rem rgb(0, 0, 0);
+    }
+    .menu ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .menu li{
+        width: 100%;
+        border-top: 1px solid #fff;
+    }
+    .menu li a {
+        width: 100%;
+    }
+    .menu li:hover {
+        background-color:rgba(255, 255, 255, 0.75);
+    }
+    #btn-menu:checked ~ .menu{
+        left: 0;
+    }
+    .btn-size{
+        font-size: 1rem;
+    }
+    /* Footer */
+    .f1  {
+        justify-content: center;
+        align-items: center;
+    }
+    .f1 h3 {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+    .f1 h4 {
+        font-size: 1.5rem;
+        font-weight: 100;
+        font-style: italic;
+    }
+    .redes a{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
